@@ -54,6 +54,7 @@ jobs:
 
       - name: Create delivery folder
         run: |
+          rm -rf release
           mkdir release
           cp -r app release/
           cp README.md release/
